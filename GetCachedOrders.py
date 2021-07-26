@@ -5,6 +5,11 @@
 # |           Copyright (C) 2021 Refinitiv. All rights reserved.              --
 # |-----------------------------------------------------------------------------
 
+# |-----------------------------------------------------------------------------
+# | Please be informed, that this example uses python library win32com 		  --
+# | that is not provided or supported by Refinitiv							  --
+# |-----------------------------------------------------------------------------
+
 import win32com.client
 import time
 from win32com.client import pythoncom, VARIANT

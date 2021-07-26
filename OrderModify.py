@@ -4,11 +4,15 @@
 # |                See the project's LICENSE.md for details.                  --
 # |           Copyright (C) 2021 Refinitiv. All rights reserved.              --
 # |-----------------------------------------------------------------------------
-"""
+
+# |-----------------------------------------------------------------------------
+# | Please be informed, that this example uses python library win32com 		  --
+# | that is not provided or supported by Refinitiv							  --
+# |-----------------------------------------------------------------------------
+
 # Load COM interface
 import win32com.client
 
-# Equity Order Entry Example
 o = win32com.client.Dispatch("REDI.ORDER")
 
 o.SetOrderKey("r151681", "gS042857202")
