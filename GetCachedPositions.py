@@ -24,7 +24,7 @@ cellVal = VARIANT(pythoncom.VT_BYREF | pythoncom.VT_VARIANT, 0)
 retVar = VARIANT(pythoncom.VT_BYREF | pythoncom.VT_VARIANT, 0)
 
 #add watch on accounts 
-myaccounts = ["EQUITY-TR"] 
+myaccounts = ["MYACCOUNT"] 
 for account in myaccounts:
 	tmpVal = q.AddWatch("2", "", account, retVar);
 	print(strftime("%Y-%m-%d %H:%M:%S", gmtime()) + ":"+" account=" + account +  ", errCode=" + " " + str(retVar.value))
