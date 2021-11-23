@@ -8,7 +8,7 @@
 # |-----------------------------------------------------------------------------
 # | Please be informed, that this example uses python library win32com 		  --
 # | that is not provided or supported by Refinitiv							  --
-# |-----------------------------------------------------------------------------
+# |----------------------------------------------------------------------------- 
 
 import win32com.client
 import time
@@ -50,5 +50,5 @@ for i in range(0, rowCount):
 	cellVar.value = "OrderRefKey"
 	ret = q.GetCell(i,  cellVar, cellVal, retVar)
 	print(str(retVar.value) + ", "+ str(cellVal.value) + "=" + str(cellVar.value) + " success="+str(ret))
-	
+
 	print("===>");
